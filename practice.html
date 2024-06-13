@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .btn-custom-radius {
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+<div class="container mt-5">
+  <!-- Context Classes -->
+  <div class="alert alert-info" role="alert">
+    Welcome to my portfolio!
+  </div>
+
+  <!-- Context Colors and Flexbox -->
+  <div class="d-flex justify-content-around mb-5">
+    <div class="p-3 bg-primary text-white w-50 btn-custom-radius">Project 1</div>
+    <div class="p-3 bg-success text-white w-50 btn-custom-radius" >Project 2</div>
+  </div>
+
+  <!-- Spacing and Floating -->
+  <div class="mb-5">
+    <img src="./images/landing.jpg" class="float-left mr-3 mb-3" alt="Project Image " style="width: 150px;">
+    <p class="text-justify">Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula nisi non urna gravida, at gravida nulla elementum.</p>
+  </div>
+
+  <!-- Position -->
+  <div class="position-relative mb-5">
+    <div class="position-absolute top-0 start-0 p-2 bg-warning btn-custom-radius">Pinned to top left</div>
+  </div>
+
+  <!-- Text Alignment and Transformation -->
+  <h2 class="text-center text-uppercase mb-5">My Projects</h2>
+
+  <!-- Sizing -->
+  <div class="w-100 p-3 bg-light mb-3">Full width container</div>
+  <div class="w-50 p-3 bg-light mb-3">Half width container</div>
+  <div class="h-25 bg-dark text-white p-3 mb-5">Quarter height container</div>
+
+  <!-- Buttons with custom border radius -->
+  <div>
+    <button class="btn btn-primary btn-custom-radius mb-2">Primary Button</button>
+    <button class="btn btn-danger btn-custom-radius mb-2">Danger Button</button>
+  </div>
+</div>
+
+</body>
+</html>
